@@ -26,7 +26,7 @@ console.log(audioSrc)
             currentAudio.play();
             this.textContent = "Stop"
 
-            currentAudio.oneended = () => {
+            currentAudio.onended = () => {
                 this.textContent = "Play"
 
 
