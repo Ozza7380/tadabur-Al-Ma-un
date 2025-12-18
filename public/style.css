@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'LMPQ';
+    src: url('font/LPMQ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-arab {
+    font-family: 'LMPQ';
+    font-size: 28px;
+    line-height: 2.2;
+    direction: rtl;
+    text-align: right;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #f7f7f7;
