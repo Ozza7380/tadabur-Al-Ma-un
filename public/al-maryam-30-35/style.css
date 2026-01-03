@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'LMPQ';
+    src: url('font/LPMQ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-arab {
+    font-family: 'LMPQ';
+    font-size: 28px;
+    line-height: 2.2;
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba (0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4px;
+    color: #008080;
+}
+
+.bassmalah {
+    border: 2px solid #008080 !important;
+    background: #ccffff !important;
+    text-align: center;
+}
+
+.ayat {
+    border: 1px solid #cceeff;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #e6f7ff;
+}
+
+.arab {
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.arti {
+    font-size: 14px;
+    color: #444;
+    margin: 12px;
+}
+
+.play-btn {
+    padding: 8px 15px;
+    border: none;
+    background: #008080;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.play-btn:hover {
+    background: #006666;
+}
