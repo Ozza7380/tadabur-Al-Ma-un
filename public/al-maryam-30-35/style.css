@@ -72,3 +72,12 @@ h1 {
 .play-btn:hover {
     background: #006666;
 }
+
+.auto-play {
+     padding: 8px 15px;
+    border: none;
+    background: #008080;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}

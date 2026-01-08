@@ -1,7 +1,4 @@
-let currentAudio = null;
-let currentButton = null;
-
-document.querySelectorAll(".play-btn").forEach(button => { // untuk memamnggil element tombol play setiap button
+document.querySelectorAll(".auto-play").forEach(button => { // untuk memamnggil element tombol play setiap button
     button.addEventListener("click", function() { // setiap element tombol diatambahkan fitur click
         const ayatDiv = this.parentElement; // mencari parent element dari tombol
         const audioSrc = ayatDiv.getAttribute("data-audio"); // mencari alamat audio di atribut data audio
