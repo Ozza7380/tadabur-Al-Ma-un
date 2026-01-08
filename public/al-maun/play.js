@@ -1,7 +1,10 @@
-document.querySelectorAll(".play-btn").forEach(button => { // untuk memamnggil element tombol play setiap button
+const autoBtns = document.querySelectorAll(".auto-play")
+autoBtns.forEach(button => { // untuk memamnggil element tombol play setiap button
     button.addEventListener("click", function() { // setiap element tombol diatambahkan fitur click
         const ayatDiv = this.parentElement; // mencari parent element dari tombol
         const audioSrc = ayatDiv.getAttribute("data-audio"); // mencari alamat audio di atribut data audio
+        const dataNext = this.getAttribute("data-next")
+console.log(dataNext)
 console.log(audioSrc) // mengcek audio
       // jika ada audio maka audio itu di berhentikan dan dimulai dari awal dan tombol kembali menunjukan "play"
         if (currentAudio) {
@@ -30,6 +33,9 @@ console.log(audioSrc) // mengcek audio
 
                 currentAudio = null;
                 currentButton = null;
+                if (dataNext !== "0") {
+                    autoBtns[parseInt(dataNext)].click();
+                }
             };
         }
     })
