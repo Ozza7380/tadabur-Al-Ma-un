@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'LMPQ';
-    src: url('font/LPMQ.ttf') format('truetype');
+    src: url('../font/LPMQ.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

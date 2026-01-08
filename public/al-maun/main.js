@@ -14,14 +14,14 @@ console.log(audioSrc) // mengcek audio
             currentAudio.pause();
             currentAudio.currentTime = 0; 
             if (currentButton) {
-                currentButton.textContent = "Play"; 
+                currentButton.textContent = "5x play"; 
             }
         }
        //  jika ada ada audio maka di reset dan menunjukan tombol "play"
         if (this === currentButton) {
             currentAudio = null
             currentButton = null
-            this.textContent = "Play";
+            this.textContent = "5x play";
         } // ketika belum ada audia terputar maka sistem akan memutar audio saat button audio "play" di tekan, dan saat audio jalan tombol "play berubah menjadi "stop"
           else {
             currentAudio =  new Audio(audioSrc);
@@ -35,7 +35,7 @@ console.log(audioSrc) // mengcek audio
                 console.log(currentLooping) // cek jumlah loop
               // agar bisa loop 5 kali dan berhenti setelah 5 kali
                 if (currentLooping >= maxLoop) {
-                 this.textContent = "Play";
+                 this.textContent = "5x play";
                 currentAudio = null;
                 currentButton = null; 
                 } else {
