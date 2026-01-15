@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.card {
+    background: #CDB885;
+}
+.card:hover {
+    background: #5DD3B6;
+}
 nav {
-    background: #222; 
+    background: #6e5034; 
     display: flex;
     justify-items: center;
     position: sticky;
@@ -27,12 +32,13 @@ nav li {
 nav a {
     display: block;
     padding: 15px;
-    color: white;
+    color: #EFE1B5;
     text-decoration: none;
 }
 
 nav a:hover {
-    background: #444;
+    background: #5DD3B6;
+    color: #6e5034;
 }
 
 html {
