@@ -8,8 +8,17 @@ body {
 }
 .card {
     background: #CDB885;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    transition: 1s;
 }
+
 .card:hover {
+    transform: scale(1.2);
     background: #5DD3B6;
 }
 nav {
@@ -38,12 +47,21 @@ nav a {
     color: #EFE1B5;
     text-decoration: none;
 }
+#Quran {
+    animation: tes 2s infinite alternate;
+}
 
-nav a:hover {
+nav a:hover { 
     background: #5DD3B6;
     color: #6e5034;
+   
 }
 
 html {
     scroll-behavior: smooth;
+}
+@keyframes tes {
+    from {scale: 1;}
+    to {scale: 1.1;}
+    
 }
